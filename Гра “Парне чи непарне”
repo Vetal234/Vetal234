@@ -1,0 +1,10 @@
+import random
+
+num = random.randint(1, 100)
+guess = input("Парне чи непарне? ")
+
+if (num % 2 == 0 and guess == "парне") or \
+   (num % 2 != 0 and guess == "непарне"):
+    print("Вгадав! Було:", num)
+else:
+    print("Не вгадав! Було:", num)
