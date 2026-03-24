@@ -1,0 +1,11 @@
+import random
+
+words = ["кіт", "собака", "машина", "компютер"]
+word = random.choice(words)
+
+guess = input("Вгадай слово: ")
+
+if guess == word:
+    print("Правильно!")
+else:
+    print("Ні! Було слово:", word)
