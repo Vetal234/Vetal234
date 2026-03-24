@@ -1,0 +1,17 @@
+import random
+
+choices = ["камінь", "ножиці", "папір"]
+
+user = input("Обери (камінь/ножиці/папір): ").lower()
+computer = random.choice(choices)
+
+print("Комп'ютер обрав:", computer)
+
+if user == computer:
+    print("Нічия!")
+elif (user == "камінь" and computer == "ножиці") or \
+     (user == "ножиці" and computer == "папір") or \
+     (user == "папір" and computer == "камінь"):
+    print("Ти виграв!")
+else:
+    print("Ти програв!")
