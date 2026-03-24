@@ -1,0 +1,5 @@
+import random
+
+while True:
+    input("Натисни Enter щоб кинути кубик...")
+    print("Випало:", random.randint(1, 6))
