@@ -1,0 +1,14 @@
+import random
+
+number = random.randint(1, 50)
+
+for i in range(5):
+    guess = int(input("Спроба: "))
+
+    if guess == number:
+        print("Ти виграв!")
+        break
+    else:
+        print("Неправильно")
+
+print("Було число:", number)
