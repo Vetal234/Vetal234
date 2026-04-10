@@ -1,0 +1,18 @@
+import random
+
+player_hp = 100
+enemy_hp = 100
+
+while player_hp > 0 and enemy_hp > 0:
+    damage = random.randint(10, 25)
+    enemy_hp -= damage
+    print("Ти вдарив на", damage)
+
+    if enemy_hp <= 0:
+        break
+
+    enemy_damage = random.randint(5, 20)
+    player_hp -= enemy_damage
+    print("Ворог вдарив на", enemy_damage)
+
+print("Перемога!" if player_hp > 0 else "Ти програв!")
