@@ -1,0 +1,3 @@
+names = ["Іван", "Олег", "Марія"]
+import random
+print(random.choice(names))
