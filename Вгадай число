@@ -1,0 +1,12 @@
+import random
+number = random.randint(1, 100)
+
+while True:
+    guess = int(input("Вгадай число (1-100): "))
+    if guess < number:
+        print("Більше!")
+    elif guess > number:
+        print("Менше!")
+    else:
+        print("Ти вгадав!")
+        break
