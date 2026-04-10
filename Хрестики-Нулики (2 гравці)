@@ -1,0 +1,17 @@
+board = [" "]*9
+
+def print_board():
+    print(board[0], "|", board[1], "|", board[2])
+    print("-"*5)
+    print(board[3], "|", board[4], "|", board[5])
+    print("-"*5)
+    print(board[6], "|", board[7], "|", board[8])
+
+player = "X"
+
+for turn in range(9):
+    print_board()
+    move = int(input(f"Гравець {player}, хід (0-8): "))
+    if board[move] == " ":
+        board[move] = player
+        player = "O" if player == "X" else "X"
