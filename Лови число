@@ -1,0 +1,5 @@
+import random
+while True:
+    if random.randint(1,5) == 3:
+        print("Ти зловив!")
+        break
