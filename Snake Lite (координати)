@@ -1,0 +1,10 @@
+snake = [5]
+food = 8
+
+while True:
+    print("Змія:", snake, "Їжа:", food)
+    move = int(input("Куди рух (число): "))
+    snake.append(move)
+    if move == food:
+        print("Ти з'їв їжу!")
+        break
