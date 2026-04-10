@@ -1,0 +1,9 @@
+import time
+
+word = "python"
+start = time.time()
+typed = input("Надрукуй слово python: ")
+end = time.time()
+
+if typed == word:
+    print("Час:", round(end-start,2), "сек")
