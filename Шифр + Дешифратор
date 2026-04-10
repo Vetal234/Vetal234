@@ -1,0 +1,7 @@
+text = input("Текст: ")
+shift = 3
+encrypted = "".join(chr(ord(c)+shift) for c in text)
+print("Зашифровано:", encrypted)
+
+decrypted = "".join(chr(ord(c)-shift) for c in encrypted)
+print("Розшифровано:", decrypted)
