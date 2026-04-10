@@ -1,0 +1,22 @@
+import random
+
+print("Рівень: 1-Легкий (1-50), 2-Середній (1-100), 3-Складний (1-500)")
+level = input("Обери рівень: ")
+
+ranges = {"1": 50, "2": 100, "3": 500}
+max_num = ranges.get(level, 100)
+
+number = random.randint(1, max_num)
+attempts = 0
+
+while True:
+    guess = int(input(f"Вгадай число (1-{max_num}): "))
+    attempts += 1
+    
+    if guess < number:
+        print("Більше!")
+    elif guess > number:
+        print("Менше!")
+    else:
+        print(f"Ти виграв за {attempts} спроб!")
+        break
