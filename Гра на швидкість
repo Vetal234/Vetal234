@@ -1,0 +1,4 @@
+import time
+start = time.time()
+input("Натисни Enter!")
+print("Час:", time.time() - start)
