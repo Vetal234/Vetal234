@@ -1,0 +1,12 @@
+import random, time
+
+numbers = [random.randint(1,9) for _ in range(5)]
+print("Запам'ятай:", numbers)
+time.sleep(3)
+
+print("\n"*50)
+guess = input("Введи числа через пробіл: ")
+if guess == " ".join(map(str,numbers)):
+    print("Правильно!")
+else:
+    print("Неправильно!", numbers)
