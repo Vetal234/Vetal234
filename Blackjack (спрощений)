@@ -1,0 +1,16 @@
+import random
+
+player = random.randint(15,21)
+dealer = random.randint(15,21)
+
+print("Твої очки:", player)
+print("Дилер:", dealer)
+
+if player > 21:
+    print("Перебір!")
+elif dealer > 21 or player > dealer:
+    print("Ти виграв!")
+elif player == dealer:
+    print("Нічия")
+else:
+    print("Програв")
