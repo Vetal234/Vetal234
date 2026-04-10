@@ -1,0 +1,21 @@
+# 16. Рівень HP
+hp=100
+hp-=random.randint(10,40)
+print("HP:",hp)
+
+# 17. Баланс
+money=100
+money+=random.randint(-50,100)
+print("Баланс:",money)
+
+# 18. Швидка реакція
+start=time.time()
+input("Enter!")
+print("Час:",time.time()-start)
+
+# 19. Лотерея
+print("Виграв!" if random.randint(1,5)==3 else "Програв")
+
+# 20–40 міні виклики
+for i in range(20,41):
+    print(f"Гра {i}: рандом число ->", random.randint(1,100))
